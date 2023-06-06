@@ -228,3 +228,9 @@ button[class^="navbar"]:hover {
     width: 150px;
   }
 }
+
+/* transition and animation stopper */
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}
