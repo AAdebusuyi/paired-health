@@ -57,7 +57,9 @@ button {
   border: none;
   cursor: pointer;
 }
-
+.btn {
+  /* where i stopped */
+}
 .container {
   max-width: 95vw;
   margin: 0 auto;
