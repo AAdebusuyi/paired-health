@@ -21,3 +21,4 @@ function changeSearchIcon() {
       "images/search-icon-dark.png";
   }
 }
+changeSearchIcon();
