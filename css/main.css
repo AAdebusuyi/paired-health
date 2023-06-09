@@ -275,6 +275,40 @@ button[class^="navbar"]:hover {
   .navbar-collapse {
     width: 320px;
   }
+  .btn-group .btn {
+    width: auto;
+  }
+  .btn-group .btn:first-child {
+    margin-right: 48px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-inner-left h1 {
+    font-size: 5.7 rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .header-inner {
+    padding-top: 3.2rem;
+  }
+  .header-inner .container {
+    grid-template-columns: 545px auto;
+    align-items: center;
+    height: calc(100vh - 32px);
+    position: relative;
+  }
+  .header-inner-left {
+    text-align: left;
+  }
+  .header-inner-left .text {
+    margin-left: 0;
+  }
+  .header-inner-left .btn-group {
+    /* where i stopped*/
+  }
 }
 
 @media (min-width: 1000px) {
