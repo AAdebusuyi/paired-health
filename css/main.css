@@ -154,8 +154,13 @@ h3 {
 .header {
   min-height: 100vh;
 }
-*/ .navbar {
-  position: fixed;
+.logo {
+  width: 100px; /* Adjust the value as needed */
+  height: 100px; /* Adjust the value as needed */
+}
+
+.navbar {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -271,6 +276,12 @@ button[class^="navbar"]:hover {
 }
 
 /* Media Queries */
+@media screen and (min-width: 768px) {
+  h1 {
+    margin-top: 50px; /* Adjust the value as needed */
+  }
+}
+
 @media (min-width: 450px) {
   .navbar-collapse {
     width: 320px;
@@ -286,7 +297,7 @@ button[class^="navbar"]:hover {
 
 @media (min-width: 768px) {
   .header-inner-left h1 {
-    font-size: 5.7 rem;
+    font-size: 4rem;
   }
 }
 
@@ -318,6 +329,9 @@ button[class^="navbar"]:hover {
 }
 
 @media (min-width: 1000px) {
+  .header-title {
+    margin-top: 100px;
+  }
   .navbar-show-btn,
   .navbar-hide-btn {
     display: none;
