@@ -155,8 +155,8 @@ h3 {
   min-height: 100vh;
 }
 .logo {
-  width: 100px; /* Adjust the value as needed */
-  height: 100px; /* Adjust the value as needed */
+  width: 100px;
+  height: 100px;
 }
 
 .navbar {
@@ -276,12 +276,6 @@ button[class^="navbar"]:hover {
 }
 
 /* Media Queries */
-@media screen and (min-width: 768px) {
-  h1 {
-    margin-top: 50px; /* Adjust the value as needed */
-  }
-}
-
 @media (min-width: 450px) {
   .navbar-collapse {
     width: 320px;
@@ -302,6 +296,9 @@ button[class^="navbar"]:hover {
 }
 
 @media (min-width: 992px) {
+  .header-title {
+    margin-top: 100px;
+  }
   .header-inner {
     padding-top: 3.2rem;
   }
@@ -328,10 +325,7 @@ button[class^="navbar"]:hover {
   }
 }
 
-@media (min-width: 1000px) {
-  .header-title {
-    margin-top: 100px;
-  }
+@media (min-width: 1200px) {
   .navbar-show-btn,
   .navbar-hide-btn {
     display: none;
@@ -396,6 +390,13 @@ button[class^="navbar"]:hover {
   }
   .header-inner-right {
     width: 100%;
+  }
+}
+
+@media (min-width: 1480px) {
+  /*General*/
+  .container {
+    max-width: 81vw;
   }
 }
 
