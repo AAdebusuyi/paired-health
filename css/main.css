@@ -154,7 +154,7 @@ h3 {
 .header {
   min-height: 100vh;
 }
-.navbar {
+*/ .navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -307,7 +307,13 @@ button[class^="navbar"]:hover {
     margin-left: 0;
   }
   .header-inner-left .btn-group {
-    /* where i stopped*/
+    justify-content: start;
+  }
+  .header-inner-right img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-left: 5rem;
   }
 }
 
@@ -373,6 +379,9 @@ button[class^="navbar"]:hover {
   }
   .search-control {
     width: 150px;
+  }
+  .header-inner-right {
+    width: 100%;
   }
 }
 
