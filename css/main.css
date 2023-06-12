@@ -344,6 +344,7 @@ button[class^="navbar"]:hover {
     transition: none;
   }
   .navbar-nav {
+    margin-right: 125px;
     display: flex;
   }
   .nav-item {
