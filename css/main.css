@@ -452,6 +452,48 @@ button[class^="navbar"]:hover {
   justify-content: center;
 }
 
+/* doctors panel */
+.doc-panel-inner {
+  margin-top: 8rem;
+}
+.doc-panel-item {
+  margin-bottom: 6rem;
+}
+.doc-panel-item:last-child {
+  margin-bottom: 0;
+}
+.doc-panel-item .img {
+  position: relative;
+  height: 440px;
+  background-color: var(--light-gray);
+  overflow: hidden;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+.doc-panel-item .img .info {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+}
+.doc-panel-item .img {
+  max-width: 357px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.doc-panel-item:hover .info {
+  bottom: 0;
+}
+
 /* Media Queries */
 @media (min-width: 450px) {
   .navbar-collapse {
@@ -473,8 +515,15 @@ button[class^="navbar"]:hover {
   .header-inner-left h1 {
     font-size: 4rem;
   }
-  .services-inner {
+  .services-inner,
+  .doc-panel-inner {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .doc-panel-inner {
+    column-gap: 3rem;
+  }
+  .doc-panel .section-head h2 {
+    text-align: left;
   }
 }
 
@@ -527,6 +576,31 @@ button[class^="navbar"]:hover {
   .about-right {
     margin-left: auto;
     margin-top: 11.2rem;
+  }
+  .banner-two .container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 6rem;
+  }
+  .banner-two-right {
+    text-align: left;
+  }
+  .banner-two-right .btn-group {
+    justify-content: flex-start;
+  }
+  .banner-two-right .lead {
+    margin-top: 0;
+  }
+  .banner-two-left img {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+  .doc-panel-inner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .doc-panel-item {
+    margin-bottom: 0;
   }
 }
 
@@ -607,6 +681,9 @@ button[class^="navbar"]:hover {
   }
   .service-item {
     margin-bottom: 0;
+  }
+  .doc-panel-inner {
+    column-gap: 9rem;
   }
 }
 
