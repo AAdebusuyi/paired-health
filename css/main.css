@@ -421,6 +421,37 @@ button[class^="navbar"]:hover {
   opacity: 0.7;
 }
 
+/* banner two section */
+.banner-two {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 80, 213, 0.9)),
+      to(rgba(0, 90, 213, 0.85))
+    ),
+    url("../images/banner-two-bg.png") top/cover no-repeat;
+  background: -o-linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)),
+    url("../images/banner-two-bg.png") top/cover no-repeat;
+  background: linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)),
+    url("../images/banner-two-bg.png") top/cover no-repeat;
+  padding: 13.6rem 0;
+}
+.banner-two-left img {
+  max-width: 620px;
+  margin: auto;
+}
+.banner-two-right .lead {
+  font-size: 2.2rem;
+  margin-top: 6rem;
+}
+.banner-two-right .btn-group {
+  margin-top: 6rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 /* Media Queries */
 @media (min-width: 450px) {
   .navbar-collapse {
