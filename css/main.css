@@ -348,6 +348,40 @@ button[class^="navbar"]:hover {
   z-index: -2;
 }
 
+/* banner one section */
+.banner-one {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 80, 213, 0.9)),
+      to(rgba(0, 90, 213, 0.85))
+    ),
+    url("../images/banner-1-img.png") top/cover no-repeat;
+  background: -o-linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)),
+    url("../images/banner-1-img.png") top/cover no-repeat;
+  background: linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)),
+    url("../images/banner-1-img.png") top/cover no-repeat;
+  height: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.banner-one .lead {
+  font-size: 2.8rem;
+  font-weight: 500;
+  max-width: 600px;
+}
+.banner-one .text-sm {
+  font-weight: 500;
+}
+
 /* Media Queries */
 @media (min-width: 450px) {
   .navbar-collapse {
