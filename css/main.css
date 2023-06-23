@@ -3,7 +3,7 @@
 
 /*root css properties*/
 :root {
-  --fros-blue-color: #b9b95c;
+  --fros-blue-color: #0050d5;
   --light-blue-color: #16c5ff;
   --dark-gray: #a1a1a0;
   --dark-color: #202020;
@@ -494,6 +494,68 @@ button[class^="navbar"]:hover {
   bottom: 0;
 }
 
+/* package service */
+.package-service-inner {
+  margin-top: 14rem;
+}
+.package-service {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 80, 213, 0.85)),
+      to(rgba(0, 80, 213, 0.95))
+    ),
+    url("../images/package-service-img.jpg") center/cover no-repeat;
+  background: -o-linear-gradient(rgba(0, 80, 213, 0.85), rgba(0, 80, 213, 0.95)),
+    url("../images/package-service-img.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 80, 213, 0.85), rgba(0, 80, 213, 0.95)),
+    url("../images/package-service-img.jpg") center/cover no-repeat;
+}
+.package-service-head {
+  color: var(--light-color);
+}
+.package-service-head h2 {
+  font-size: 39px;
+}
+.package-service-item {
+  padding: 3rem 5rem;
+  position: relative;
+  margin-bottom: 12rem;
+}
+.package-service-item:last-child {
+  margin-bottom: 0;
+}
+.package-service-item .icon {
+  width: 86px;
+  height: 86px;
+  background-color: var(--light-blue-color);
+  border-radius: 2rem;
+  border-bottom-right-radius: 0;
+  color: var(--light-color);
+  position: absolute;
+  top: -43px;
+  left: 50%;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  -ms-transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
+}
+.package-service-item .icon i {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.package-service-item h3 {
+  opacity: 0.7;
+  margin: 8rem 0 4rem 0;
+}
+.package-service-item .text-sm {
+  color: var(--dark-gray);
+}
+.package-service-item .btn {
+  margin: 4rem 0;
+}
+
 /* Media Queries */
 @media (min-width: 450px) {
   .navbar-collapse {
@@ -524,6 +586,10 @@ button[class^="navbar"]:hover {
   }
   .doc-panel .section-head h2 {
     text-align: left;
+  }
+  .package-service-inner {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
   }
 }
 
@@ -600,6 +666,12 @@ button[class^="navbar"]:hover {
     grid-template-columns: repeat(3, 1fr);
   }
   .doc-panel-item {
+    margin-bottom: 0;
+  }
+  .doc-panel-inner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .package-service-inner {
     margin-bottom: 0;
   }
 }
