@@ -639,6 +639,87 @@ button[class^="navbar"]:hover {
   margin-right: 2rem;
 }
 
+/* footer */
+.footer {
+  background-color: var(--dark-color);
+}
+.footer-item {
+  margin-bottom: 6rem;
+}
+.footer-item:last-child {
+  margin-bottom: 0;
+}
+.footer-head {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 2.4rem;
+  margin-bottom: 4rem;
+}
+.footer-item .icon {
+  width: 120px;
+  margin: auto;
+}
+.footer-item .text {
+  padding: 3rem 0;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.footer-item address {
+  font-size: 1.5rem;
+  font-style: normal;
+}
+.footer-item .tags-list {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.footer-item .tags-list li {
+  margin: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  background-color: rgb(58, 58, 58);
+  border-radius: 0.4rem;
+}
+.footer-item a {
+  margin-bottom: 1rem;
+  display: inline-block;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+}
+.footer-item a:hover {
+  color: var(--dark-gray);
+}
+.footer-item:last-child .text {
+  padding-top: 0;
+}
+.footer-item .appointment-info li {
+  margin: 1rem 0;
+}
+.footer-item .appointment-info li span {
+  margin-left: 1rem;
+}
+.footer-links {
+  border-top: 2px solid var(--dark-gray);
+  padding: 4.5rem 0;
+}
+.footer-links li {
+  margin: 0 2.4rem;
+  font-size: 2rem;
+}
+.footer-links li a {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--light-color);
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+}
+.footer-links li a:hover {
+  background-color: var(--light-color);
+  color: var(--fros-blue-color);
+}
+
 /* Media Queries */
 @media (min-width: 450px) {
   .navbar-collapse {
