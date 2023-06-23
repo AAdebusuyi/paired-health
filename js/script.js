@@ -10,6 +10,27 @@ navbarHideBtn.addEventListener("click", function () {
   navbarCollapseDiv.classList.remove("navbar-show");
 });
 
+// Smooth scrolling for navigation links
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  navLinks.forEach(function (link) {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+
+      const targetId = this.getAttribute("href");
+      const targetElement = document.querySelector(targetId);
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: "smooth",
+        });
+      }
+    });
+  });
+});
+
 // changing search icon image on window resize
 window.addEventListener("resize", changeSearchIcon);
 function changeSearchIcon() {
