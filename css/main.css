@@ -639,7 +639,7 @@ button[class^="navbar"]:hover {
   margin-right: 2rem;
 }
 
-/* footer */
+/* footer section*/
 .footer {
   background-color: var(--dark-color);
 }
@@ -752,9 +752,20 @@ button[class^="navbar"]:hover {
     text-align: left;
   }
   .package-service-inner,
-  .posts-inner {
+  .posts-inner,
+  .footer-inner {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 6rem;
+  }
+  .footer-inner {
+    text-align: left;
+  }
+  .footer-item .icon,
+  .footer-item .text {
+    margin-left: 0;
+  }
+  .footer-item .tags-list {
+    justify-content: flex-start;
   }
 }
 
@@ -936,6 +947,10 @@ button[class^="navbar"]:hover {
   }
   .contact .container {
     grid-template-columns: auto 514px;
+  }
+  .footer-inner {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: rem;
   }
 }
 
