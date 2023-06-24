@@ -736,6 +736,9 @@ button[class^="navbar"]:hover {
   .border-line {
     width: 405px;
   }
+  .btn-group {
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) {
