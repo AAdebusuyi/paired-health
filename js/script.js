@@ -31,6 +31,40 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Function to handle smooth scrolling
+function smoothScroll(target) {
+  const element = document.querySelector(target);
+  window.scrollTo({
+    top: element.offsetTop,
+    behavior: "smooth",
+  });
+}
+
+// Add event listener to Learn More buttons
+const learnMoreButtons = document.querySelectorAll(".learn-more-btn");
+learnMoreButtons.forEach((button) => {
+  button.addEventListener("click", function (e) {
+    e.preventDefault();
+    smoothScroll(this.getAttribute("href"));
+  });
+});
+
+// Add event listener to Our Services button
+const ourServicesButton = document.querySelector(".our-services-btn");
+ourServicesButton.addEventListener("click", function (e) {
+  e.preventDefault();
+  smoothScroll(this.getAttribute("href"));
+});
+
+// Add event listener to Contact Us buttons
+const contactUsButtons = document.querySelectorAll(".contact-us-btn");
+contactUsButtons.forEach((button) => {
+  button.addEventListener("click", function (e) {
+    e.preventDefault();
+    smoothScroll(this.getAttribute("href"));
+  });
+});
+
 // changing search icon image on window resize
 window.addEventListener("resize", changeSearchIcon);
 function changeSearchIcon() {
